@@ -17,10 +17,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Solutions</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-blue-500">International Freight</a></li>
-              <li><a href="#" className="hover:text-blue-500">Supply Chain</a></li>
-              <li><a href="#" className="hover:text-blue-500">Last Mile Delivery</a></li>
-              <li><a href="#" className="hover:text-blue-500">Customs Clearance</a></li>
+            <li><Link to="/international-freight" className="hover:text-blue-500">International Freight</Link></li>
+              <li><Link to="/supply-chain" className="hover:text-blue-500">Supply Chain</Link></li>
+              <li><Link to="/last-mile-delivery" className="hover:text-blue-500">Last Mile Delivery</Link></li>
+              <li><Link to="/customs-clearance" className="hover:text-blue-500">Customs Clearance</Link></li>
             </ul>
           </div>
           <div>
@@ -35,10 +35,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Connect</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-blue-500">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-blue-500">Twitter</a></li>
-              <li><a href="#" className="hover:text-blue-500">Facebook</a></li>
-              <li><a href="#" className="hover:text-blue-500">Instagram</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">LinkedIn</a></li>
+              <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Twitter</a></li>
+              <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Facebook</a></li>
+              <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Instagram</a></li>
             </ul>
           </div>
           {/* <div>
