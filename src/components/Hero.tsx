@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -15,12 +16,18 @@ export default function Hero() {
               Premium logistics solutions backed by cutting-edge technology and exceptional service. Ship smarter, faster, and more efficiently across borders.
             </p>
             <div className="flex space-x-4">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center">
+              <Link 
+                to="/contact" 
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center"
+              >
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
-              <button className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors">
+              </Link>
+              <Link 
+                to="/solutions" 
+                className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative">
