@@ -13,7 +13,7 @@ export default function Navbar() {
     { path: '/services', label: 'Services' },
     { path: '/about', label: 'About' },
     {
-      path: '#',
+      path: '/',
       label: 'Company',
       dropdown: [
         { path: '/careers', label: 'Careers' },
@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center space-x-2">
             <Globe2 className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold text-gray-900">Shymaxx</span>
+            <span className="text-xl font-bold text-gray-900">BridgeOnix</span>
           </Link>
 
           {/* Desktop Navigation */}

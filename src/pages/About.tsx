@@ -4,7 +4,7 @@ import { Globe2, Users, Target, Award } from 'lucide-react';
 export default function About() {
   const team = [
     {
-      name: "Sarah Chen",
+      name: "Apollo Sharma",
       role: "Chief Executive Officer",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
     },
@@ -14,8 +14,8 @@ export default function About() {
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
     },
     {
-      name: "Emily Thompson",
-      role: "Head of Technology",
+      name: "Vatsal Sharma",
+      role: "Chief Technology Officer",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400"
     },
     {
@@ -31,7 +31,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">About Shymaxx</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">About BridgeOnix</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Transforming global logistics through innovation and excellence since 2010
             </p>
@@ -81,11 +81,11 @@ export default function About() {
           <div className="bg-blue-600 rounded-2xl p-12 text-white">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold mb-2">2010</div>
+                <div className="text-4xl font-bold mb-2">2023</div>
                 <div className="text-blue-100">Founded</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">1000+</div>
+                <div className="text-4xl font-bold mb-2">150+</div>
                 <div className="text-blue-100">Employees</div>
               </div>
               <div>
