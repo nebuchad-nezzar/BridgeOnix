@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Globe2 } from 'lucide-react';
 
 export default function Footer() {
@@ -25,10 +26,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-500">Careers</a></li>
-              <li><a href="#" className="hover:text-blue-500">Press</a></li>
-              <li><a href="#" className="hover:text-blue-500">Contact</a></li>
+              <li><Link to="/about" className="hover:text-blue-500">About Us</Link></li>
+              <li><Link to="/careers" className="hover:text-blue-500">Careers</Link></li>
+              <li><Link to="/press" className="hover:text-blue-500">Press</Link></li>
+              <li><Link to="/contact" className="hover:text-blue-500">Contact</Link></li>
             </ul>
           </div>
           <div>

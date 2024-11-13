@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Globe2, Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
 
   const isActive = (path: string) => location.pathname === path;
 
   const navLinks = [
-    { path: '/solutions', label: 'Solutions' },
+    { path: '/solutions', label: 'Solutions', dropdown: [
+      { path: '/international-freight', label: 'International Freight' },
+      { path: '/supply-chain', label: 'Supply Chain' },
+      { path: '/last-mile-delivery', label: 'Last Mile Delivery' },
+      { path: '/customs-clearance', label: 'Customs Clearance' }
+    ]},
     { path: '/services', label: 'Services' },
     { path: '/about', label: 'About' },
     {
@@ -23,7 +31,18 @@ export default function Navbar() {
     { path: '/contact', label: 'Contact' }
   ];
 
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const handleMouseEnter = (label: string) => {
+    if (dropdownTimeout.current) {
+      clearTimeout(dropdownTimeout.current);
+    }
+    setActiveDropdown(label);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimeout.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 200); // Small delay to allow smoother transitions
+  };
 
   return (
     <nav className="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
@@ -37,13 +56,14 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <div key={link.path} className="relative">
+              <div
+                key={link.path}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(link.label)}
+                onMouseLeave={handleMouseLeave}
+              >
                 {link.dropdown ? (
-                  <div
-                    className="relative group"
-                    onMouseEnter={() => setActiveDropdown(link.label)}
-                    onMouseLeave={() => setActiveDropdown(null)}
-                  >
+                  <>
                     <button className="text-gray-600 hover:text-blue-600 transition-colors">
                       {link.label}
                     </button>
@@ -63,7 +83,7 @@ export default function Navbar() {
                         </div>
                       </div>
                     )}
-                  </div>
+                  </>
                 ) : (
                   <Link
                     to={link.path}
