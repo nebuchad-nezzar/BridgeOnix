@@ -59,7 +59,7 @@ export default function LastMileDelivery() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img
-                src="./public/images/lmd.png"
+                src="/public/images/lmd.png"
                 alt="Last Mile Delivery"
                 className="rounded-lg shadow-lg"
               />
