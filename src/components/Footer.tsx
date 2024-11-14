@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Globe2 } from 'lucide-react';
+import logo from '/public/images/brigdeOnix.png';
+
 
 export default function Footer() {
   return (
@@ -9,7 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <Globe2 className="h-8 w-8 text-blue-500" />
+            <img src={logo} alt="BridgeOnix Logo" className="h-14 w-14" />
               <span className="text-xl font-bold text-white">BridgeOnix</span>
             </div>
             <p className="text-gray-400">Premium cross-border logistics solutions for modern businesses.</p>
