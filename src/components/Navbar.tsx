@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Globe2, Menu, X } from 'lucide-react';
+import logo from '/images/brigdeOnix.png';
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,11 +47,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <nav className="fixed w-full bg-white-400/30 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center space-x-2">
-            <Globe2 className="h-8 w-8 text-blue-600" />
+          <img src={logo} alt="BridgeOnix Logo" className="h-14 w-14" />
             <span className="text-xl font-bold text-gray-900">BridgeOnix</span>
           </Link>
 

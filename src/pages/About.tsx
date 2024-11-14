@@ -6,28 +6,28 @@ export default function About() {
     {
       name: "Apollo Sharma",
       role: "Chief Executive Officer",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
     },
     {
-      name: "Michael Rodriguez",
+      name: "Michaela Rodriguez",
       role: "Chief Operations Officer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400"
     },
     {
       name: "Vatsal Sharma",
       role: "Chief Technology Officer",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400"
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400"
     },
     {
-      name: "David Kim",
+      name: "Kimberly Johnson",
       role: "Global Logistics Director",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400"
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400&h=400"
     }
   ];
 
   return (
-    <div className="pt-24">
-      <div className="bg-gradient-to-br from-blue-50 to-white py-20">
+    <div className="pt-2">
+      <div className="bg-gradient-to-br from-blue-50 to-white py-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Hero Section */}
           <div className="text-center mb-16">
