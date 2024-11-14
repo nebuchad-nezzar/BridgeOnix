@@ -72,7 +72,7 @@ export default function Career() {
 
           {/* Benefits Section */}
           <div className="mb-20">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why Join Shymaxx?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why Join BridgeOnix?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">

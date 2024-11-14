@@ -137,8 +137,8 @@ export default function Contact() {
                     <Phone className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-gray-600">+1 (555) 987-6543</p>
+                      <p className="text-gray-600">+1 9810-988903</p>
+                      <p className="text-gray-600">+1 437-440-6660</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -146,9 +146,9 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-gray-900">Address</h3>
                       <p className="text-gray-600">
-                        123 Logistics Way<br />
+                        {/* 123 Logistics Way<br />
                         Suite 100<br />
-                        San Francisco, CA 94105
+                        San Francisco, CA 94105 */}
                       </p>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function Contact() {
                       <h3 className="font-semibold text-gray-900">Business Hours</h3>
                       <p className="text-gray-600">
                         Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 4:00 PM<br />
+                        Saturday: Closed<br />
                         Sunday: Closed
                       </p>
                     </div>

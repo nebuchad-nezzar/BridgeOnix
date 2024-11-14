@@ -1,6 +1,7 @@
 import React from 'react';
 import { Truck, MapPin, Clock, Smartphone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from "/images/lmd.png";
 
 export default function LastMileDelivery() {
   const features = [
@@ -58,11 +59,7 @@ export default function LastMileDelivery() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <img
-                src="/public/images/lmd.png"
-                alt="Last Mile Delivery"
-                className="rounded-lg shadow-lg"
-              />
+            <img src={logo}  className="rounded-lg shadow-lg" />
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Benefits of Our Last Mile Solution</h2>
