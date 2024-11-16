@@ -133,19 +133,19 @@ export default function Navbar() {
               </div>
             ) : (
               <div className="flex items-center space-x-4">
-                <Link
+                {/* <Link
                   to="/login"
                   className="flex items-center text-white hover:text-blue-600 transition-colors"
                 >
                   <LogIn className="h-5 w-5 mr-1" />
                   Login
-                </Link>
+                </Link> */}
                 <Link
-                  to="/register"
+                  to="/login"
                   className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  <UserPlus className="h-5 w-5 mr-1" />
-                  Register
+                  
+                  Sign In
                 </Link>
               </div>
             )}
