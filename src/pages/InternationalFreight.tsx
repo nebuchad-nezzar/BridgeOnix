@@ -1,6 +1,8 @@
 import React from 'react';
 import { Plane, Ship, Truck, Clock, Shield, Globe2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from "/images/intship.png";
+
 
 export default function InternationalFreight() {
   const services = [
@@ -53,11 +55,7 @@ export default function InternationalFreight() {
 
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800"
-                alt="International Freight"
-                className="rounded-lg shadow-lg"
-              />
+            <img src={logo}  className="rounded-lg shadow-lg w-500 h-500" />
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Our Freight Services?</h2>
