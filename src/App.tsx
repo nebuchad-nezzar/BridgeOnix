@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
 import Solutions from './pages/Solutions';
 import Services from './pages/Services';
 import About from './pages/About';
@@ -15,6 +17,7 @@ import InternationalFreight from './pages/InternationalFreight';
 import SupplyChain from './pages/SupplyChain';
 import LastMileDelivery from './pages/LastMileDelivery';
 import CustomsClearance from './pages/CustomsClearance';
+import PrivateRoute from './components/PrivateRoute';
 
 
 
@@ -30,6 +33,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
+            } />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/international-freight" element={<InternationalFreight />} />
             <Route path="/supply-chain" element={<SupplyChain />} />
